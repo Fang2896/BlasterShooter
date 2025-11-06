@@ -1,0 +1,59 @@
+# Ignore all files by default, but scan all directories.
+*
+!*/
+
+# Do not ignore git files in the root of the repo.
+!/.git*
+!/.gitattributes
+
+# Do not ignore project descriptor
+!/*.uproject
+
+# Do not ignore source, config, content and plugins
+!/Source/**
+!/Config/**
+!/Plugins/**
+
+# Content: track only uasset and umap files
+!/Content/**/*.uasset
+!/Content/**/*.umap
+
+# Allow any files from /RawContent dir (e.g. art assets, fbx, wav, etc.)
+!/RawContent/**/*
+
+# Optionally track scripts or documentation
+!/Scripts/**
+!/Docs/**
+
+# OS/platform generated files
+ehthumbs.db
+Thumbs.db
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+*~
+
+# Ignore Unreal external actor data (auto-generated)
+Content/**/_ExternalActors_/
+Content/**/_ExternalObjects_/
+
+
+# IDE cache
+.vs/
+.idea/
+.vscode/
+
+# Unreal generated folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+*.VC.db
+*.VC.opendb
+*.sln
+
+# Logs
+*.log
